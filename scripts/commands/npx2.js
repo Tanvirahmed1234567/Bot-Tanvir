@@ -19,18 +19,18 @@ handleEvent: async function({ api, event, client, __GLOBAL }) {
   const axios = require('axios')
 const media = (
     await axios.get(
-      'https://i.imgur.com/Yc2atQe.mp4',
+      'https://i.imgur.com/4f4w1g7.mp4','https://i.imgur.com/74rCKlP.mp4','https://i.imgur.com/xI8H4fo.mp4',
       { responseType: 'stream' }
     )
   ).data;
 
-	if (body.indexOf("Love")==0 || body.indexOf("❤️‍🔥")==0 || body.indexOf("💌")==0 || body.indexOf("💘")==0 || body.indexOf("💟")==0 || body.indexOf("I love u")==0 || body.indexOf("I love you")==0 || body.indexOf("valobashi")==0 || body.indexOf("Valobashi")==0 || body.indexOf("🖤")==0) {
+	if (body.indexOf("🏍️")==0 || body.indexOf("bike")==0 || body.indexOf("🚲")==0 || body.indexOf("🚴🏻‍♂️")==0 || body.indexOf("🚳")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf("🖤")==0) {
 		var msg = {
-				body: "ভালোবাসা সুন্দর🖤",
+				body: " -•|•mY 1sT emØtîØn_//-😵🏍️",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("🖤", event.messageID, (err) => {}, true)
+    api.setMessageReaction("😵",event.messageID, (err) => {}, true)
 		}
 	},
 	start: function({ nayan }) {
