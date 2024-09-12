@@ -1,4 +1,3 @@
-
 const fs = require("fs");
 module.exports = {
   config:{
@@ -18,20 +17,22 @@ handleEvent: async function({ api, event, client, __GLOBAL }) {
   const content = event.body ? event.body : '';
   const body = content.toLowerCase();
   const axios = require('axios')
+  const NAYAN = ['https://i.imgur.com/rdV22l6.mp4','https://i.imgur.com/gg6Vh6x.mp4','https://i.imgur.com/naq7XwF.mp4','https://i.imgur.com/DdErHEM.mp4']
+    var rndm = NAYAN[Math.floor(Math.random() * NAYAN.length)];
 const media = (
     await axios.get(
-      'https://i.imgur.com/5s9IVCN.mp4','https://i.imgur.com/Eqp4Gp4.mp4','https://i.imgur.com/B4cImYg.mp4','https://i.imgur.com/QLKZ1jX.mp4','https://i.imgur.com/BkI2Mw0.mp4',
+      `${rndm}`,
       { responseType: 'stream' }
     )
   ).data;
 
-  if (body.indexOf("😒")==0 || body.indexOf("😒😒")==0 || body.indexOf("😒😒😒")==0 || body.indexOf("😒😒😒😒")==0 || body.indexOf("🥴🥴")==0 || body.indexOf("😏")==0 || body.indexOf("😼")==0 || body.indexOf("🥱")==0 || body.indexOf("🥴")==0 || body.indexOf("🙄🙄")==0) {
+  if (body.indexOf("🏍️")==0 || body.indexOf("🚲")==0 || body.indexOf("🚴🏻‍♀️")==0 || body.indexOf("🚗")==0 || body.indexOf("🏎️")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
     var msg = {
-        body: " -•|•eÎ emØjÎ amr bØss likE køre na_//-😾",
+        body: "-•|•-u are mY 1st emotion_//-😇🌺",
         attachment: media
       }
       api.sendMessage( msg, threadID, messageID);
-    api.setMessageReaction("😾",event.messageID, (err) => {}, true)
+    api.setMessageReaction("🙃", event.messageID, (err) => {}, true)
     }
   },
   start: function({ nayan }) {
