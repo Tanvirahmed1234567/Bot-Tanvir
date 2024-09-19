@@ -15,7 +15,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
 	const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
 	const type = (event.author == event.logMessageData.leftParticipantFbId) ? "•|•😵😇লিভ নেউয়ার জন্য ধন্যবাদ 🤢 A fØr abL pØla paN_//-🫵🏻😂" : "Kicked by Administrator";
 	const path = join(__dirname, "nayan", "https://i.imgur.com/MZ2hOPY.mp4");
-	const gifPath = join(path, `l.gif`);
+	const gifPath = join(path, `https://i.imgur.com/Ou8U7vZ.mp4`);
 	var msg, formPush
 
 	if (existsSync(path)) mkdirSync(path, { recursive: true });
