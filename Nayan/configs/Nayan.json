@@ -1,6 +1,6 @@
 {
   "login": {
-    "email": "ahmeddipto123132@gmail.com",
+    "email": "halarpo123132@gmail.com",
     "password": "tmd#2422004"
   },
   "loginoptions": {
@@ -21,7 +21,7 @@
   "allowInbox": false,
   "adminOnly": false,
   "autoCreateDB": true,
-  "encryptSt": true,
+  "encryptSt": false,
   "version": "4.0.0",
   "logs": {
     "enable": true
